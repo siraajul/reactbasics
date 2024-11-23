@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { Fragment } from "react";
 //Component Imports
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -7,14 +7,8 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
 const App = () => {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <ContactForm />
-      <Footer />
-    </div>
-  );
+  let marks = 80;
+  return <div>{marks >= 80 ? <h1>Brilliant</h1> : <h1>Average</h1>}</div>;
 };
 
 export default App;
