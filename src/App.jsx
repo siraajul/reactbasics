@@ -7,17 +7,15 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
 const App = () => {
-  let marks = 80;
+  let city = ["Dhaka", "Barishal", "Chittagong", "Dinajpur", "Eswordi"];
 
   return (
     <div>
-      {(() => {
-        if (marks > 80 && marks < 100) {
-          return <h1>A+</h1>;
-        } else if (marks > 70 && marks < 90) {
-          return <h1>A</h1>;
-        }
-      })()}
+      <ul>
+        {city.map((item, i) => {
+          return <li key={i.toString}>{item}</li>;
+        })}
+      </ul>
     </div>
   );
 };
