@@ -7,7 +7,15 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
 const App = () => {
-  let city = ["Dhaka", "Barishal", "Chittagong", "Dinajpur", "Eswordi"];
+  let city = [
+    "Dhaka",
+    "Barishal",
+    "Chittagong",
+    "Dinajpur",
+    "Eswordi",
+    "Brahmanbaria",
+    "Sylhet",
+  ];
 
   return (
     <div>
